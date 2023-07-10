@@ -1,5 +1,5 @@
 import { ChakraProvider, Flex } from "@chakra-ui/react";
-import { Console } from "./screens/Console/Console";
+import { Console } from "./screens/console/Console";
 
 function App() {
   return (
