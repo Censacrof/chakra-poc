@@ -4,7 +4,7 @@ import { Console } from "./screens/Console/Console";
 function App() {
   return (
     <ChakraProvider>
-      <Flex direction={"column"} position={"fixed"} inset={0}>
+      <Flex direction={"column"} position={"fixed"} inset={0} padding={4}>
         <Console />
       </Flex>
     </ChakraProvider>
