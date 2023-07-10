@@ -1,6 +1,7 @@
 import { Flex, Icon, IconButton, Select, Spacer, Text } from "@chakra-ui/react";
 import { FC } from "react";
 import { FiExternalLink } from "react-icons/fi";
+import { ColorModeSwitcherButton } from "../../components/ColorModeSwitcherButton";
 
 export const Header: FC = () => {
   return (
@@ -12,6 +13,7 @@ export const Header: FC = () => {
         <Icon as={FiExternalLink} />
       </IconButton>
       <Spacer />
+      <ColorModeSwitcherButton />
       <Select width={"10rem"} textAlign={"right"} variant={"unstyled"}>
         <option>Available</option>
         <option>Offline</option>
