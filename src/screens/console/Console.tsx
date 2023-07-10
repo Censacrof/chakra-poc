@@ -6,6 +6,7 @@ import {
   GridItemProps,
 } from "@chakra-ui/react";
 import { FC, ReactNode } from "react";
+import { CallControls } from "./CallControls";
 import { CallStatus } from "./CallStatus";
 import { Header } from "./Header";
 import { QueuesStats } from "./QueuesStats";
@@ -49,6 +50,10 @@ export const Console: FC = () => {
           <ConsoleGridItem rowStart={1} colStart={1}>
             <CallStatus />
           </ConsoleGridItem>
+
+          <GridItem rowStart={2} colStart={1}>
+            <CallControls />
+          </GridItem>
         </Grid>
       </GridItem>
     </Grid>
