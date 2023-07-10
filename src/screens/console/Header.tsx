@@ -1,6 +1,6 @@
-import { LinkIcon } from "@chakra-ui/icons";
-import { Flex, IconButton, Select, Spacer, Text } from "@chakra-ui/react";
+import { Flex, Icon, IconButton, Select, Spacer, Text } from "@chakra-ui/react";
 import { FC } from "react";
+import { FiExternalLink } from "react-icons/fi";
 
 export const Header: FC = () => {
   return (
@@ -8,8 +8,8 @@ export const Header: FC = () => {
       <Text fontSize={"xl"} fontWeight={"bold"}>
         Webex Attendant Console
       </Text>
-      <IconButton aria-label="Open in browser" variant={"outline"}>
-        <LinkIcon />
+      <IconButton size={"sm"} aria-label="Open in browser" variant={"outline"}>
+        <Icon as={FiExternalLink} />
       </IconButton>
       <Spacer />
       <Select width={"10rem"} textAlign={"right"} variant={"unstyled"}>
