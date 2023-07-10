@@ -7,8 +7,8 @@ import {
 } from "@chakra-ui/react";
 import { FC, ReactNode } from "react";
 import { Header } from "./Header";
-import { Queues } from "./Queues";
 import { Stats } from "./Stats";
+import { Queues } from "./queues/Queues";
 
 export const Console: FC = () => {
   return (

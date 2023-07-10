@@ -12,6 +12,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { FC, ReactNode } from "react";
+import { MainNumberQueuesTable } from "./MainNumberQueuesTable";
 
 export const Queues: FC = () => {
   return (
@@ -29,14 +30,12 @@ export const Queues: FC = () => {
       </TabList>
       <TabPanels>
         <Accordion>
-          <QueuesAccordionItem title="All queues">stuff</QueuesAccordionItem>
-
-          <QueuesAccordionItem title="Main number queue">
-            stuff
+          <QueuesAccordionItem title="All queues">
+            <MainNumberQueuesTable />
           </QueuesAccordionItem>
 
           <QueuesAccordionItem title="Main number queue">
-            stuff
+            <MainNumberQueuesTable />
           </QueuesAccordionItem>
 
           <QueuesAccordionItem title="Support queues">
