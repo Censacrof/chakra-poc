@@ -1,9 +1,12 @@
-import { ChakraProvider, Heading } from "@chakra-ui/react";
+import { ChakraProvider, Flex } from "@chakra-ui/react";
+import { Console } from "./screens/Console";
 
 function App() {
   return (
     <ChakraProvider>
-      <Heading>Hello Wolrd!</Heading>
+      <Flex direction={"column"} position={"fixed"} inset={0}>
+        <Console />
+      </Flex>
     </ChakraProvider>
   );
 }
