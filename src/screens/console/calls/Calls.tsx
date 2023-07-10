@@ -1,5 +1,6 @@
-import { Tab, TabList, TabPanels, Tabs } from "@chakra-ui/react";
+import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import { FC } from "react";
+import { CurrentCallsTable } from "./CurrentCallsTable";
 
 export const Calls: FC = () => {
   return (
@@ -14,13 +15,18 @@ export const Calls: FC = () => {
       colorScheme="gray"
     >
       <TabList>
-        <Tab>Colleagues</Tab>
+        <Tab>Current Calls</Tab>
         <Tab>Parked Calls</Tab>
         <Tab>Conferences</Tab>
       </TabList>
-      <TabPanels>Stuff 1</TabPanels>
-      <TabPanels>Stuff 2</TabPanels>
-      <TabPanels>Stuff 3</TabPanels>
+
+      <TabPanels>
+        <TabPanel>
+          <CurrentCallsTable />
+        </TabPanel>
+        <TabPanel>Stuff 2</TabPanel>
+        <TabPanel>Stuff 3</TabPanel>
+      </TabPanels>
     </Tabs>
   );
 };
