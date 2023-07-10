@@ -12,6 +12,7 @@ import { Header } from "./Header";
 import { QueuesStats } from "./QueuesStats";
 import { RecordingControls } from "./RecordingControls";
 import { Calls } from "./calls/Calls";
+import { Contacts } from "./contacts/Contacts";
 import { Queues } from "./queues/Queues";
 
 export const Console: FC = () => {
@@ -63,6 +64,10 @@ export const Console: FC = () => {
 
           <ConsoleGridItem rowStart={3} colStart={1} colSpan={2}>
             <Calls />
+          </ConsoleGridItem>
+
+          <ConsoleGridItem rowStart={4} colStart={1} colSpan={2}>
+            <Contacts />
           </ConsoleGridItem>
         </Grid>
       </GridItem>
