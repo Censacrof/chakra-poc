@@ -24,6 +24,7 @@ export const Queues: FC = () => {
       gap={4}
       variant={"soft-rounded"}
       size={"sm"}
+      colorScheme="gray"
     >
       <TabList>
         <Tab>Queues</Tab>
