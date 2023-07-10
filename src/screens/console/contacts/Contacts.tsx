@@ -1,5 +1,6 @@
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import { FC } from "react";
+import { ColleaguesTable } from "./ColleaguesTable";
 
 export const Contacts: FC = () => {
   return (
@@ -20,7 +21,9 @@ export const Contacts: FC = () => {
         <Tab>Registry</Tab>
       </TabList>
       <TabPanels>
-        <TabPanel>Stuff 1</TabPanel>
+        <TabPanel>
+          <ColleaguesTable />
+        </TabPanel>
         <TabPanel>Stuff 2</TabPanel>
         <TabPanel>Stuff 3</TabPanel>
         <TabPanel>Stuff 4</TabPanel>
