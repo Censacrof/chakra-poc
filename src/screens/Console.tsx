@@ -1,5 +1,6 @@
 import { Card, CardBody, Grid, GridItem } from "@chakra-ui/react";
 import { FC, ReactNode } from "react";
+import { Header } from "./Header";
 
 export const Console: FC = () => {
   return (
@@ -8,7 +9,17 @@ export const Console: FC = () => {
       alignSelf={"stretch"}
       templateColumns={"1fr 2fr"}
       templateRows={"4.5rem 13.5rem 1fr"}
-    ></Grid>
+    >
+      <GridItem
+        rowStart={1}
+        rowEnd={1}
+        colStart={1}
+        colEnd={-1}
+        display={"flex"}
+      >
+        <Header />
+      </GridItem>
+    </Grid>
   );
 };
 
