@@ -11,6 +11,7 @@ import { CallStatus } from "./CallStatus";
 import { Header } from "./Header";
 import { QueuesStats } from "./QueuesStats";
 import { RecordingControls } from "./RecordingControls";
+import { Calls } from "./calls/Calls";
 import { Queues } from "./queues/Queues";
 
 export const Console: FC = () => {
@@ -58,6 +59,10 @@ export const Console: FC = () => {
 
           <ConsoleGridItem rowStart={1} colStart={2} rowSpan={2}>
             <RecordingControls />
+          </ConsoleGridItem>
+
+          <ConsoleGridItem rowStart={3} colStart={1} colSpan={2}>
+            <Calls />
           </ConsoleGridItem>
         </Grid>
       </GridItem>
