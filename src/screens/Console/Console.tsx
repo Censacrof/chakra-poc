@@ -1,6 +1,13 @@
-import { Card, CardBody, Grid, GridItem } from "@chakra-ui/react";
+import {
+  Card,
+  CardBody,
+  Grid,
+  GridItem,
+  GridItemProps,
+} from "@chakra-ui/react";
 import { FC, ReactNode } from "react";
 import { Header } from "./Header";
+import { Queues } from "./Queues";
 import { Stats } from "./Stats";
 
 export const Console: FC = () => {
@@ -10,6 +17,7 @@ export const Console: FC = () => {
       alignSelf={"stretch"}
       templateColumns={"1fr 2fr"}
       templateRows={"4.5rem min-content 1fr"}
+      gap={4}
     >
       <GridItem
         rowStart={1}
@@ -20,18 +28,25 @@ export const Console: FC = () => {
       >
         <Header />
       </GridItem>
-      <ConsoleGridItem>
+
+      <ConsoleGridItem rowStart={2} colStart={1}>
         <Stats />
+      </ConsoleGridItem>
+
+      <ConsoleGridItem rowStart={3} colStart={1}>
+        <Queues />
       </ConsoleGridItem>
     </Grid>
   );
 };
 
-const ConsoleGridItem: FC<{
-  children?: ReactNode | ReactNode[];
-}> = ({ children }) => {
+const ConsoleGridItem: FC<
+  {
+    children?: ReactNode | ReactNode[];
+  } & GridItemProps
+> = ({ children, ...props }) => {
   return (
-    <GridItem display={"flex"}>
+    <GridItem display={"flex"} {...props}>
       <Card flexGrow={1} display={"flex"}>
         <CardBody display={"flex"}>{children}</CardBody>
       </Card>
