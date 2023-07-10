@@ -1,12 +1,6 @@
-import {
-  Card,
-  CardBody,
-  Grid,
-  Stat,
-  StatLabel,
-  StatNumber,
-} from "@chakra-ui/react";
-import { FC, ReactNode } from "react";
+import { Grid, StatLabel, StatNumber } from "@chakra-ui/react";
+import { FC } from "react";
+import { StatsCard } from "../../components/StatsCard";
 
 export const QueuesStats: FC = () => {
   return (
@@ -17,32 +11,22 @@ export const QueuesStats: FC = () => {
       templateColumns={"repeat(2, 1fr)"}
       gap={4}
     >
-      <StatCard>
+      <StatsCard>
         <StatNumber>5</StatNumber>
         <StatLabel>Waiting Calls</StatLabel>
-      </StatCard>
-      <StatCard>
+      </StatsCard>
+      <StatsCard>
         <StatNumber>05:22</StatNumber>
         <StatLabel>Max Waiting Time</StatLabel>
-      </StatCard>
-      <StatCard>
+      </StatsCard>
+      <StatsCard>
         <StatNumber>07:24</StatNumber>
         <StatLabel>Avg Duration</StatLabel>
-      </StatCard>
-      <StatCard>
+      </StatsCard>
+      <StatsCard>
         <StatNumber>01:32</StatNumber>
         <StatLabel>Avg Waiting Time</StatLabel>
-      </StatCard>
+      </StatsCard>
     </Grid>
-  );
-};
-
-const StatCard: FC<{ children?: ReactNode | ReactNode[] }> = ({ children }) => {
-  return (
-    <Card variant={"filled"}>
-      <CardBody>
-        <Stat>{children}</Stat>
-      </CardBody>
-    </Card>
   );
 };
