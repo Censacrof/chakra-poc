@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { FC, ReactNode } from "react";
 
-export const Stats: FC = () => {
+export const QueuesStats: FC = () => {
   return (
     <Grid
       flexGrow={1}

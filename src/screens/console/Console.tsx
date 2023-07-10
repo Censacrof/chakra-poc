@@ -8,7 +8,7 @@ import {
 import { FC, ReactNode } from "react";
 import { CallStatus } from "./CallStatus";
 import { Header } from "./Header";
-import { Stats } from "./Stats";
+import { QueuesStats } from "./QueuesStats";
 import { Queues } from "./queues/Queues";
 
 export const Console: FC = () => {
@@ -31,7 +31,7 @@ export const Console: FC = () => {
       </GridItem>
 
       <ConsoleGridItem rowStart={2} colStart={1}>
-        <Stats />
+        <QueuesStats />
       </ConsoleGridItem>
 
       <ConsoleGridItem rowStart={3} colStart={1}>
