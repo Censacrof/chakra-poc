@@ -10,7 +10,7 @@ import { RiUserSearchLine } from "react-icons/ri";
 
 export const CallControls: FC = () => {
   return (
-    <HStack>
+    <HStack alignItems={"center"}>
       <IconButton variant={"outline"} aria-label={"Pause"}>
         <Icon as={AiOutlinePause} />
       </IconButton>

@@ -52,7 +52,7 @@ export const Console: FC = () => {
             <CallStatus />
           </ConsoleGridItem>
 
-          <GridItem rowStart={2} colStart={1}>
+          <GridItem display={"flex"} rowStart={2} colStart={1}>
             <CallControls />
           </GridItem>
 
