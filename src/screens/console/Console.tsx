@@ -36,6 +36,16 @@ export const Console: FC = () => {
       <ConsoleGridItem rowStart={3} colStart={1}>
         <Queues />
       </ConsoleGridItem>
+
+      <GridItem display={"flex"} rowStart={2} rowSpan={2} colStart={2}>
+        <Grid
+          flexGrow={1}
+          alignSelf={"stretch"}
+          templateRows={"min-content min-content 1fr 1.5fr"}
+          templateColumns={"2.5fr 1fr"}
+          gap={4}
+        ></Grid>
+      </GridItem>
     </Grid>
   );
 };
