@@ -1,7 +1,8 @@
-import { Flex, Icon, IconButton, Select, Spacer, Text } from "@chakra-ui/react";
+import { Flex, Icon, Select, Spacer, Text } from "@chakra-ui/react";
 import { FC } from "react";
 import { FiExternalLink } from "react-icons/fi";
 import { ColorModeSwitcherButton } from "../../components/ColorModeSwitcherButton";
+import { IconButton } from "../../components/IconButton";
 
 export const Header: FC = () => {
   return (

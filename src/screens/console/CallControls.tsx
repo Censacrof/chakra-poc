@@ -1,4 +1,4 @@
-import { Divider, HStack, Icon, IconButton } from "@chakra-ui/react";
+import { Divider, HStack, Icon } from "@chakra-ui/react";
 import { FC } from "react";
 import { AiOutlinePause } from "react-icons/ai";
 import { BiGroup } from "react-icons/bi";
@@ -7,6 +7,7 @@ import { FiPhoneForwarded } from "react-icons/fi";
 import { ImPhoneHangUp } from "react-icons/im";
 
 import { RiUserSearchLine } from "react-icons/ri";
+import { IconButton } from "../../components/IconButton";
 
 export const CallControls: FC = () => {
   return (

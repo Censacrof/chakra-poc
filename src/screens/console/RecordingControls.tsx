@@ -1,15 +1,9 @@
-import {
-  Flex,
-  HStack,
-  Icon,
-  IconButton,
-  StatLabel,
-  StatNumber,
-} from "@chakra-ui/react";
+import { Flex, HStack, Icon, StatLabel, StatNumber } from "@chakra-ui/react";
 import { FC } from "react";
 import { AiOutlinePause } from "react-icons/ai";
 import { FaStop } from "react-icons/fa";
 
+import { IconButton } from "../../components/IconButton";
 import { StatsCard } from "../../components/StatsCard";
 
 export const RecordingControls: FC = () => {
