@@ -30,7 +30,7 @@ export const Queues: FC = () => {
         <Tab>Queues</Tab>
       </TabList>
       <TabPanels>
-        <Accordion>
+        <Accordion allowToggle>
           <QueuesAccordionItem title="All queues">
             <MainNumberQueuesTable />
           </QueuesAccordionItem>
